@@ -1,0 +1,169 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CORES SENAC + TECH */
+:root {
+    --azul: #005baa;
+    --laranja: #f7941d;
+    --branco: #ffffff;
+    --cinza: #f4f4f4;
+    --escuro: #1a1a1a;
+}
+
+/* BODY */
+body {
+    background: linear-gradient(135deg, #005baa, #0a1f44);
+    color: var(--branco);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, var(--azul), var(--laranja));
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+/* NAV ajustado para botões */
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+/* Remove estilos antigos dos links no nav */
+nav a {
+    /* Removido: color, margin, font-weight, etc. */
+    /* Agora só usa .btn */
+    all: unset;
+    cursor: pointer;
+    display: inline-block;
+}
+nav a:hover {
+    background: rgba(255, 255, 255, 0.318);
+    border-radius: 50px;
+}
+nav a.btn {
+    /* Usa o estilo do botão já existente */
+    background: var(--laranja);
+    color: #000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 0;
+}
+nav a.btn:hover {
+    background: #ffb347;
+    color: #000;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    padding: 30px;
+}
+
+/* ARTICLE */
+article {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+
+    /* NOVO */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+/* efeito hover profissional */
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+}
+
+/* ASIDE */
+aside {
+    background: rgba(0,0,0,0.3);
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* FOOTER */
+footer {
+    background: var(--escuro);
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* BOTÕES */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--laranja);
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+    background: #ffb347;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* NAVIGATION BAR STYLES */
+nav {
+    background: transparent;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1000;
+}
+
+nav a {
+    all: unset;
+    cursor: pointer;
+    display: inline-block;
+}
+
+nav a.btn {
+    background: var(--laranja);
+    color: #000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 0;
+}
+
+nav a.btn:hover {
+    background: #ffb347;
+    color: #000;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
