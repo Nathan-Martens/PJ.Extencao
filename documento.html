@@ -1,37 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Documento da Aula</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
-<header>
-    <h1>Projeto IA</h1>
-    <nav>
+<!-- NAVBAR MODERNA -->
+<header class="navbar">
+
+    <!-- LOGO -->
+    <div class="logo-area">
+
+        <h1>🤖 Projeto IA</h1>
+
+    </div>
+
+    <!-- MENU MOBILE -->
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-icon">
+
+        ☰
+
+    </label>
+
+    <!-- LINKS -->
+    <nav class="nav-links">
+
         <a href="index.html">Início</a>
+
         <a href="artigo.html">Artigo Científico</a>
+
         <a href="documento.html">Documento</a>
+
         <a href="aula.html">Aula</a>
+
+        <a href="atividade.html">Atividade</a>
+
     </nav>
+
 </header>
 
+<!-- CONTEÚDO -->
 <main class="container">
-    <article>
-        <h2>Documento – Aula sobre IA</h2>
-        <p>Material utilizado na aula para explicar o uso consciente da IA.</p>
 
-        <a class="btn" href="#">Abrir Documento</a>
+    <!-- CARD PRINCIPAL -->
+    <article class="led-card">
+
+        <h2>Documento – Aula sobre IA</h2>
+
+        <p>
+            Material utilizado durante a aula para apresentar conceitos,
+            aplicações e reflexões sobre o uso consciente da Inteligência Artificial.
+        </p>
+
+        <p>
+            O documento reúne conteúdos complementares abordados
+            ao longo da apresentação realizada em sala.
+        </p>
+
+        <!-- BOTÃO -->
+        <div class="artigo-area">
+
+            <a class="btn artigo-btn"
+               href="#">
+
+                Abrir Documento
+
+            </a>
+
+        </div>
+
     </article>
+
 </main>
 
-<aside>
-    <p>Material didático simplificado.</p>
+<!-- ASIDE -->
+<aside class="led-aside">
+
+    <p>
+        Material didático desenvolvido para apoio educacional
+        e aprofundamento do conteúdo apresentado.
+    </p>
+
 </aside>
 
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 - Projeto IA SENAC</p>
+
+    <p>
+        © 2026 - Projeto IA SENAC
+    </p>
+
 </footer>
 
 </body>
