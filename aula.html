@@ -1,37 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Aula Ministrada</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
-<header>
-    <h1>Projeto IA</h1>
-    <nav>
+<!-- NAVBAR MODERNA -->
+<header class="navbar">
+
+    <!-- LOGO -->
+    <div class="logo-area">
+
+        <h1>🤖 Projeto IA</h1>
+
+    </div>
+
+    <!-- MENU MOBILE -->
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-icon">
+
+        ☰
+
+    </label>
+
+    <!-- LINKS -->
+    <nav class="nav-links">
+
         <a href="index.html">Início</a>
+
         <a href="artigo.html">Artigo Científico</a>
+
         <!--<a href="documento.html">Documento</a>-->
+
         <a href="aula.html">Aula</a>
+
+        <a href="atividade.html">Atividade</a>
+
     </nav>
+
 </header>
 
+<!-- CONTEÚDO -->
 <main class="container">
-    <article>
-        <h2>Aula Ministrada</h2>
-        <p>Acesse os slides e conteúdos apresentados em sala.</p>
 
-        <a class="btn" href="pdfs/Aula_IA_SENAC_Antonio_Nathan.pdf">Abrir Aula</a>
+    <!-- CARD PRINCIPAL -->
+    <article class="led-card">
+
+        <h2>Aula Ministrada</h2>
+
+        <p>
+            Nesta seção você pode acessar os slides utilizados
+            durante a aula sobre uso consciente da Inteligência Artificial.
+        </p>
+
+        <p>
+            O conteúdo aborda:
+        </p>
+
+        <!-- TÓPICOS -->
+        <div class="topicos-aula">
+
+            <div class="topico-box">
+                O que é IA
+            </div>
+
+            <div class="topico-box">
+                IA Generativa
+            </div>
+
+            <div class="topico-box">
+                Uso consciente
+            </div>
+
+            <div class="topico-box">
+                Senso crítico
+            </div>
+
+            <div class="topico-box">
+                Engenharia de Prompt
+            </div>
+
+            <div class="topico-box">
+                Atividades práticas
+            </div>
+
+        </div>
+
+        <!-- BOTÃO -->
+        <div class="aula-btn-area">
+
+            <a class="btn aula-btn"
+               target="_blank"
+               href="pdfs/Aula_IA_SENAC_Antonio_Nathan.pdf">
+
+                Abrir Aula Completa
+
+            </a>
+
+        </div>
+
     </article>
+
 </main>
 
-<aside>
-    <p>Slides e conteúdos interativos.</p>
+<!-- ASIDE -->
+<aside class="led-aside">
+
+    <p>
+        O objetivo da aula é mostrar como a IA pode auxiliar
+        no aprendizado sem substituir o pensamento crítico humano.
+    </p>
+
 </aside>
 
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 - Projeto IA SENAC</p>
+
+    <p>
+        © 2026 - Projeto IA SENAC
+    </p>
+
 </footer>
 
 </body>
